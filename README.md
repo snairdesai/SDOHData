@@ -67,11 +67,12 @@ Overview of SDOH datasets for HGHI/HSPH/BSPH research needs, from the [Presentat
   - Data is provided for individual-level representative samples from 1850-1880, 1900-present, as well as the ACS files 
     from 2000-present.
 
-  - Note, you are unable to trace individuals across multiple years, and there are substantial differences across sample       years. However, there are a set of “harmonized variables” that are shared across the sample period.
+  - Note, you are unable to trace individuals across multiple years, and there are substantial differences across sample years. However, there are a set of    
+    “harmonized variables” that are shared across the sample period.
 
   - To explore the data, you need to create a (free) account and select a subsample of interest. There isn’t a traditional 
-    “data documentation” PDF (because of the sheer size of the data), but rather a [user interface](https://usa.ipums.org/usa-action/variables/group) to learn more about 
-    selected variables of interest.
+    “data documentation” PDF (because of the sheer size of the data), but rather a [user interface](https://usa.ipums.org/usa-action/variables/group) to learn more 
+    about selected variables of interest.
 
 *R Packages to help work with Census data - [tidycensus](https://cran.r-project.org/web/packages/tidycensus/index.html); [acs](https://cran.r-project.org/web/packages/acs/acs.pdf); [tigris](https://cran.r-project.org/web/packages/tigris/index.html), or for a more detailed guide, see [here](https://rconsortium.github.io/censusguide/r-packages-all.html).*
 

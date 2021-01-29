@@ -75,3 +75,37 @@ Overview of SDOH datasets for HGHI/HSPH/BSPH research needs.
 
 
 **2. CDC SVI**
+
+  - Constructed by CDC’s Agency for Toxic Substances and Disease Registry. Data is meant to illustrate a community’s social 
+    vulnerability, as measured by the potential inability to or high cost of responding to disasters (naturally, this has 
+    meant it has become very relevant during COVID-19).
+
+  - This vulnerability is captured relatively. So they are essentially ranking US tracts and counties by risk levels. 
+    *Higher values = more vulnerable.*
+
+  - For documentation on how exactly the SVI calculated their relative rankings, see [this paper](https://www.atsdr.cdc.gov/placeandhealth/svi/img/pdf/Flanagan_2011_SVIforDisasterManagement-508.pdf) from their 2011 
+    publication.
+
+  - The four summary themes are based on a set of fifteen social factors (i.e. unemployment, lack of vehicle access, 
+    disability, etc.).
+
+  - Started adding Tribal Tracts in 2014, but estimates are not ranked relative to one another or other 
+    US tracts.
+
+*Variable Assignment* 
+
+  - There are two separate datasets available by year, at the national and state level. The former is used for relative 
+    percentile rankings across the U.S., while the later is used for comparisons within individual states. The majority of 
+    their population statistics is pulled directly from the U.S. Census.
+
+  - In the latest file (2018) they included two additional adjunct variables which are not used to calculate relative     
+    rankings (daytime population & people without health insurance).
+
+  - Variables prefixed with “E” represent estimates, while those prefixed by “M” represent margins of error (just like the 
+    Census, where they get most of their data).
+
+  - Missing Values are coded as -999, so be careful to remove them prior to tabulation.
+
+  - Geographic Shifts: Sometimes U.S. counties do not have relevant population estimates, and the count of these missing 
+    counties varies by year. About 645 U.S. counties were missing in the most recent file (2018).
+

@@ -1,6 +1,8 @@
-# SDOH Data (from the [Presentation on SDOH](https://docs.google.com/presentation/d/1Cv2l9j2-hQvYXyVXblDQ5OM3lE42Z-s4gyr0YL3FV3U/edit?usp=sharing) given 1/29/2021)
+# SDOH Data
 
-Overview of SDOH datasets for HGHI/HSPH/BSPH research needs.
+
+
+Overview of SDOH datasets for HGHI/HSPH/BSPH research needs, from the [Presentation on SDOH](https://docs.google.com/presentation/d/1Cv2l9j2-hQvYXyVXblDQ5OM3lE42Z-s4gyr0YL3FV3U/edit?usp=sharing) given 1/29/2021.
 
 **1. ACS, PUMS, and IPUMS**
 

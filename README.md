@@ -165,7 +165,7 @@ Overview of SDOH datasets for HGHI/HSPH/BSPH research needs.
 
   - Difference between Zip Codes and ZCTAs → ZCTAs constitute a series of Census block groups, which are not defined 
     exactly based on traditional zip codes → so be careful when merging patient information by zip code to the ZCTA files. 
-    HRSA provides a helpful crosswalk.
+    HRSA provides a [helpful crosswalk](https://udsmapper.org/zip-code-to-zcta-crosswalk/).
 
 *Data from:*
 
@@ -186,5 +186,5 @@ Overview of SDOH datasets for HGHI/HSPH/BSPH research needs.
     negative
 
   - Geographic Shifts → Sometimes county-level indicators are averaged over many years, which means data may be presented 
-    for a county which no longer exists, or has not yet been established → the Census website reviews the counties for    
-    which this might be problematic.
+    for a county which no longer exists, or has not yet been established → the [Census website](https://www.census.gov/programs-surveys/geography/technical-documentation/county-changes.1990.html) reviews the counties 
+    for which this might be problematic.

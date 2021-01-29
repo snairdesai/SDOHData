@@ -108,4 +108,83 @@ Overview of SDOH datasets for HGHI/HSPH/BSPH research needs.
 
   - Geographic Shifts: Sometimes U.S. counties do not have relevant population estimates, and the count of these missing 
     counties varies by year. About 645 U.S. counties were missing in the most recent file (2018).
+    
+ **3. Area Deprivation Index**
+ 
+  - Also known as the “Neighborhood Atlas”, hosted by University of Wisconsin. First created in 1990, and then revamped in 
+    2000 (not publicly available as of now).
 
+  - Data is constructed across all Census US Block Groups using data pulled from the five-year ASC files.
+
+  - Data is protected for any communities with fewer than 100 inhabitants, OR 30 housing units, OR more than a third of 
+    the population living in group quarters.
+
+  - The single most important indicator is the ADI percentile ranking, for which higher percentiles indicate more 
+    disadvantaged communities. For a paper outlining the construction of those metrics, see [this paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4251560/pdf/nihms619606.pdf).
+
+  - While data is available at the Block group level, crosswalks so exist which can link these data at the ZCTA-level. 
+    However, this is not normally recommended for these specific metrics.
+
+ **4. HRSA AHRF**
+ 
+  - Composite of 50 unique healthcare datasets, covering over 6000 variables - including from the AMA Masterfile data. 
+    AMA M.D. data pulled from 1990, 2000, 2005, and from 2010-2018.
+
+  - Important to note some studies have compared AMA survey data to state licensing boards and found sizeable 
+    discrepancies.
+
+  - The AMA data provides the following sub-classifications for Physicians’ Major Professional Activities:
+    Office Based Practices; Hospital Based Practices; Hospital Full-Time Staff; Residents; Medical Teaching; Medical     
+    Research; and Administration.
+
+  - They pull health facility and utilization data from the AHA Annual Survey of Hospitals → in 2018, the survey covered 
+    6,146 U.S. hospitals (of which 1,815 did not respond, and values were imputed). Expenditures are pulled from the CMS 
+    for 2010, 2015, and 2018. 
+
+  - They also have expenditures for VA facilities from the Office of Policy and Planning, Department of Veteran Affairs 
+    from 2012-2018.
+
+  - Also includes Health Professional Shortage Area data (indicate shortages in primary care, dental care, and mental 
+    health by U.S. county).
+
+  - They calculate three scores for these healthcare shortages, based on population-to-provider ratio; percentage below       the poverty line; and travel time to the nearest source of care.
+
+  - Variable categories: Codes and ID variables; Health Professions (i.e. physicians, dentists, podiatrists, etc.); Health 
+    Facilities (hospital type, employment, nursing facilities, etc.); Utilization (inpatient days; outpatient visits, 
+    etc.); Expenditures; Population; Environment (air quality, elevation, ground contamination).
+
+  - The data also includes county-level Rural and Urban Continuum Codes from 2013, pulled from the US Department of 
+    Agriculture.
+
+**5. AHRQ**
+
+  - Social: Demographics, Age, Race/Ethnicity, SVI, Segregation, Living Conditions
+  - Economic: Workforce/Employment, Poverty, Income
+  - Infrastructure: Environment, Crime, Housing, Food Access, Transportation
+  - Healthcare: Access, Quality, Health Insurance Status, Health Behavior, Health Status, Utilization
+
+  - Difference between Zip Codes and ZCTAs → ZCTAs constitute a series of Census block groups, which are not defined 
+    exactly based on traditional zip codes → so be careful when merging patient information by zip code to the ZCTA files. 
+    HRSA provides a helpful crosswalk.
+
+*Data from:*
+
+  - American Community Survey (ACS -- includes five-year files, not one and three-year files + based on 2010 Census); 
+    Area Health Resource Files (AHRF); Social Vulnerability Index (SVI); amfAR Opioid and Health Indicators Database; CDC 
+    Interactive Atlas of Heart Disease and Stroke; Medicare Advantage Penetration Files (MAP); and Civil Rights Data 
+    Collection
+
+*Notes on their Collection Procedure:*
+
+  - Variable Assignment → Either linked by single year (i.e. Nursing Home Compare data from 2016 appears in the 2016 file) 
+    OR linked by last year available for ranges (i.e. ACS data over the range 2012-2016 appears in the 2016 file).
+
+  - Variable Names → All variables are prefixed by the data source, which will be helpful for differentiating underlying 
+    collection
+
+  - Missing Values → Coded as blank, with the exception of the County Health Ranking Data, where they are coded as 
+    negative
+
+  - Geographic Shifts → Sometimes county-level indicators are averaged over many years, which means data may be presented 
+    for a county which no longer exists, or has not yet been established → the Census website reviews the counties for    
+    which this might be problematic.

@@ -20,18 +20,19 @@ Overview of SDOH datasets for HGHI/HSPH/BSPH research needs.
 
   - Unlike the decennial Census, the ACS aggregates indicators over periods of time (one year or five years). The Census '     captures a moment in time. 
 
-  - If you’d like earlier archival data, you can check out the Data.gov catalog. You can also find summary files going back     either farther back.
+  - If you’d like earlier archival data, you can check out the [Data.gov catalog](https://catalog.data.gov/dataset/2005-american-community-survey-1-year-estimates). You can also find [summary files](https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html) going back either farther.
 
 *B) PUMS*
 
-  - In addition to these general tabulations, the Census Bureau also makes available PUMS (Public Use Microdata Sample 
-    Files) to allow researchers to generate more granular datasets for their own needs.
+  - In addition to these general tabulations, the Census Bureau also makes available [PUMS (Public Use Microdata Sample 
+    Files)](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_pums_handbook_2020.pdf) to allow 
+    researchers to generate more granular datasets for their own needs.
 
   - PUMS data is available either at the individual or household level, and weighted respectively.
     Geography is at the Regional, State, and PUMAs level.
 
   - The delineations of PUMAs are a bit complicated to understand and are redrawn based on every decennial Census, but are 
-    reviewed in the Census documentation (page 5).
+    reviewed in the [Census documentation](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_pums_handbook_2020.pdf) (page 5).
 
   - PUMAs are identified by a five-digit code, which must be uniquely identified across states (meaning you can have the  
     same PUMAs codes across states).
@@ -52,7 +53,8 @@ Overview of SDOH datasets for HGHI/HSPH/BSPH research needs.
 
   - There are 250 PUMS individual-level variables, and 200 household-level variables (so, a lot). 
 
-  - The Census has detailed guides on the ACS and PUMS, each of which cater to a specific demographic (i.e. they have a 
+  - The Census has [detailed guides](https://www.census.gov/programs-surveys/acs/guidance.html) on the ACS and PUMS, each 
+    of which cater to a specific demographic (i.e. they have a 
     file for everyday citizens, for journalists, for researchers, etc.)
 
 *C) IPUMS*
@@ -66,9 +68,10 @@ Overview of SDOH datasets for HGHI/HSPH/BSPH research needs.
   - Note, you are unable to trace individuals across multiple years, and there are substantial differences across sample       years. However, there are a set of “harmonized variables” that are shared across the sample period.
 
   - To explore the data, you need to create a (free) account and select a subsample of interest. There isn’t a traditional 
-    “data documentation” PDF (because of the sheer size of the data), but rather a user interface to learn more about 
+    “data documentation” PDF (because of the sheer size of the data), but rather a [user interface](https://usa.ipums.org/usa-action/variables/group) to learn more about 
     selected variables of interest.
 
-*R Packages to help work with Census data - tidycensus; acs; tigris → for a more detailed guide, see here.*
+*R Packages to help work with Census data - [tidycensus](https://cran.r-project.org/web/packages/tidycensus/index.html); [acs](https://cran.r-project.org/web/packages/acs/acs.pdf); [tigris](https://cran.r-project.org/web/packages/tigris/index.html), or for a more detailed guide, see [here](https://rconsortium.github.io/censusguide/r-packages-all.html).*
 
 
+**2. CDC SVI**

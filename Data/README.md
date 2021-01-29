@@ -19,3 +19,9 @@
 
   - For more data, create a free account and visit the [website](https://www.neighborhoodatlas.medicine.wisc.edu/download).
   - You'll note the only available indicators are geographic IDs, and the ADI rankings themselves.
+
+4. AHRF Data - 2020 Statewise Example Data
+
+*Data: AHRF_Statewise_2020.xlsx*
+
+  - To download the data, visit this [site](https://data.hrsa.gov/data/download). Note, the file sizes are large.

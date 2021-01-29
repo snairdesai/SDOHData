@@ -1,4 +1,4 @@
-*Documentation for each Data Source*
+*Documentation for each Data Source:*
 
   - [ACS](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf)
   - [PUMS](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_pums_handbook_2020.pdf)
